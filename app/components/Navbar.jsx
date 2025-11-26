@@ -1,8 +1,9 @@
 "use client";
-
 import Link from "next/link";
 import React, { useState } from "react";
 import { useAuth } from "@/context/AuthContext";
+import { toast } from "react-toastify";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
   const { user, logout } = useAuth();
@@ -10,9 +11,12 @@ const Navbar = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const router = useRouter();
 
   const handleLogout = async () => {
     await logout();
+    toast.success("Logged Out Successfully !");
+    router.push("/login");
   };
 
   return (
@@ -28,8 +32,8 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-8 font-medium">
 
           <Link href="/" className="hover:text-red-600">Home</Link>
-          <Link href="/donors" className="hover:text-red-600">Search Donor</Link>
-          <Link href="/donate" className="hover:text-red-600">Donate</Link>
+          <Link href="/donors" className="hover:text-red-600"> Donors</Link>
+          <Link href="/joinAsDonor" className="hover:text-red-600">Join as A Donor</Link>
           <Link href="/request-blood" className="hover:text-red-600">
             Request Blood
           </Link>

@@ -8,6 +8,7 @@ import {
 } from "firebase/auth";
 import { auth } from "@/lib/firebase";
 import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
 
 export default function RegisterPage() {
   const router = useRouter();
@@ -25,9 +26,10 @@ export default function RegisterPage() {
 
     try {
       await createUserWithEmailAndPassword(auth, email, password);
+      toast.success("Registered Successfully!");
       router.push("/"); // redirect after success
     } catch (err) {
-      setError(err.message);
+      toast.error(err.message);
     }
   };
 
@@ -35,9 +37,10 @@ export default function RegisterPage() {
   const handleGoogleSignIn = async () => {
     try {
       await signInWithPopup(auth, googleProvider);
+      toast.success("Registered  with Google!");
       router.push("/");
     } catch (err) {
-      setError(err.message);
+      toast.error(err.message);
     }
   };
 

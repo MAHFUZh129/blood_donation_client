@@ -5,6 +5,7 @@ import { signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from 
 import React, { useState } from 'react';
 import { auth } from "@/lib/firebase";
 import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
 
 
 const Page = () => {
@@ -22,9 +23,10 @@ const Page = () => {
 
         try {
             await signInWithEmailAndPassword(auth, email, password);
-              router.push("/"); // redirect after login
+             toast.success("Logged in Successfully!");
+            router.push("/"); // redirect after login
         } catch (err) {
-            setError(err.message);
+            toast.error(err.message);
         }
     };
 
@@ -33,9 +35,10 @@ const Page = () => {
     const handleGoogleSignIn = async () => {
         try {
             await signInWithPopup(auth, googleProvider);
+            toast.success("Logged in with Google!");
             router.push("/");
         } catch (err) {
-            setError(err.message);
+            toast.error(err.message);
         }
     };
 

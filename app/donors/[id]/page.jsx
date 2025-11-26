@@ -3,7 +3,7 @@ import React from "react";
 
 export default  async function DonorDetails({params}) {
   const {id} = await params
-  const res = await fetch(`http://localhost:5000/donors/${id}`);
+  const res = await fetch(`https://blood-donation-server-three-zeta.vercel.app/donors/${id}`);
   const donor = await res.json();
   return (
 
@@ -99,7 +99,7 @@ export default  async function DonorDetails({params}) {
 
         {/* Contact Button */}
         <button className="w-full mt-8 py-3 rounded-xl bg-red-600 text-white text-lg font-semibold hover:bg-red-500 transition">
-          Contact Donor
+          Collect Blood
         </button>
       </div>
     </div>

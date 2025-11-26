@@ -2,7 +2,7 @@ import Link from "next/link";
 import ProtectedRoute from "../components/ProtectedRoute";
 
 async function getData() {
-  const res = await fetch("http://localhost:5000/donors", {
+  const res = await fetch("https://blood-donation-server-three-zeta.vercel.app/donors", {
     cache: "no-store",
   });
   return res.json();
