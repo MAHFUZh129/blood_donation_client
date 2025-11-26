@@ -1,6 +1,17 @@
-/* @import "tailwindcss"; */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-size: 16px;
+}
+
+.text-sm { font-size: 0.875rem !important; }
+.text-base { font-size: 1rem !important; }
+.text-lg { font-size: 1.125rem !important; }
+.text-xl { font-size: 1.25rem !important; }
+.text-2xl { font-size: 1.5rem !important; }
+
+body {
+  @apply bg-white text-gray-800 min-h-screen;
+}
