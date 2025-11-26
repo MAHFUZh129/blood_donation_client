@@ -21,3 +21,17 @@ Just open the app, search by blood group & location, and find help within second
 - TypeScript
 - Tailwind CSS + daisyUI
 - Deployed on Vercel
+
+### Setup & Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/MAHFUZh129/blood_donation_client.git
+cd blood_donation_client
+
+# Install dependencies
+npm install
+
+# Run locally
+npm run dev
+# Open http://localhost:3000
