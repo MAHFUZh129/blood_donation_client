@@ -25,7 +25,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <Link href="/" className="text-3xl italic font-bold text-red-700">
-          Donate<span className="text-red-600">Blood</span>
+          Donate<span className="text-red-600">Bloo</span>
         </Link>
 
         {/* Desktop Menu */}
