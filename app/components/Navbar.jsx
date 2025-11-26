@@ -25,7 +25,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <Link href="/" className="text-3xl italic font-bold text-red-700">
-          Donate<span className="text-red-600">Bloo</span>
+          Donate<span className="text-red-600">Blood</span>
         </Link>
 
         {/* Desktop Menu */}
@@ -41,8 +41,8 @@ const Navbar = () => {
 
           {!user && (
             <>
-              <Link href="/login" className="bg-red-600 px-4 text-white py-2 font-bold text-xl hover:bg-amber-600">Login</Link>
-              <Link href="/register" className="bg-red-600 px-4 text-white py-2 font-bold text-xl hover:bg-amber-600">Register</Link>
+              <Link href="/login" className="bg-red-600 px-4 text-white py-2 font-bold text-md hover:bg-amber-600">Login</Link>
+              <Link href="/register" className="bg-red-600 px-4 text-white py-2 font-bold text-md hover:bg-amber-600">Register</Link>
             </>
           )} 
 
