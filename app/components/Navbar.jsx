@@ -24,25 +24,25 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
         {/* Logo */}
-        <Link href="/" className="text-2xl font-bold text-red-600">
-          BloodDonate
+        <Link href="/" className="text-3xl italic font-bold text-red-700">
+          Donate<span className="text-red-600">Blood</span>
         </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8 font-medium">
 
-          <Link href="/" className="hover:text-red-600">Home</Link>
-          <Link href="/donors" className="hover:text-red-600"> Donors</Link>
-          <Link href="/joinAsDonor" className="hover:text-red-600">Join as A Donor</Link>
-          <Link href="/request-blood" className="hover:text-red-600">
+          <Link href="/" className="hover:text-red-600 font-bold text-md">Home</Link>
+          <Link href="/donors" className="hover:text-red-600 font-bold text-md"> Donors</Link>
+          <Link href="/joinAsDonor" className="hover:text-red-600 font-bold text-md">Join as A Donor</Link>
+          <Link href="/request-blood" className="hover:text-red-600 font-bold text-md">
             Request Blood
           </Link>
-          <Link href="/about" className="hover:text-red-600">About</Link>
+          <Link href="/about" className="hover:text-red-600 font-bold text-md">About</Link>
 
           {!user && (
             <>
-              <Link href="/login" className="bg-red-600 px-4 text-white py-2 hover:bg-amber-600">Login</Link>
-              <Link href="/register" className="bg-red-600 px-4 text-white py-2 hover:bg-amber-600">Register</Link>
+              <Link href="/login" className="bg-red-600 px-4 text-white py-2 font-bold text-xl hover:bg-amber-600">Login</Link>
+              <Link href="/register" className="bg-red-600 px-4 text-white py-2 font-bold text-xl hover:bg-amber-600">Register</Link>
             </>
           )} 
 
@@ -50,7 +50,7 @@ const Navbar = () => {
             <div className="relative">
               <button
                 onClick={() => setDropdownOpen(!dropdownOpen)}
-                className="flex items-center gap-2 bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600"
+                className="flex items-center gap-2 bg-red-500 text-white font-bold text-lg px-3 py-1 rounded hover:bg-red-600"
               >
                 
                 {user.displayName}
@@ -61,7 +61,7 @@ const Navbar = () => {
                 <div className="absolute right-0 mt-2 w-58 bg-white shadow-lg rounded border z-50">
                   <div className="px-4 py-2 border-b">
                     <p className="text-sm text-gray-600">Logged in as:</p>
-                    <p className="font-semibold">{user.email}</p>
+                    <p className="font-bold text-lg ">{user.email}</p>
                   </div>
 
                   <button

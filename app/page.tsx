@@ -10,7 +10,7 @@ export default function Home() {
   return (
      <div>
       <Hero></Hero>
-      <div className="mx-auto max-w-7xl px-6 py-16">
+      <div className=" bg-gradient-to-br from-red-100 via-red-300 to-rose-400 px-10 py-10  ">
         <Features></Features>
         <Itemcard></Itemcard>
         <Testimonials></Testimonials>

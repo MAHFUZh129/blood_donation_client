@@ -2,10 +2,10 @@ import React from 'react';
 
 const Features = () => {
     return (
-        <div>
+        <div className='bg-slate-400 rounded-lg p-10'>
             <section id="features" className="mb-12">
-<h2 className="text-2xl font-bold">Features</h2>
-<p className="mt-2 text-sm text-gray-600">What makes our program reliable and donor-friendly.</p>
+<h2 className="text-2xl text-white font-bold">Features</h2>
+<p className="mt-2 text-lg text-white">What makes our program reliable and donor-friendly.</p>
 
 
 <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -19,11 +19,11 @@ const Features = () => {
 <div className="flex items-center gap-4">
 <div className="h-12 w-12 rounded-lg bg-red-50 flex items-center justify-center text-2xl group-hover:bg-red-100 transition-colors">{f.icon}</div>
 <div>
-<h3 className="font-semibold text-sm">{f.title}</h3>
-<p className="mt-1 text-xs text-gray-500">{f.desc}</p>
+<h3 className="font-semibold text-lg">{f.title}</h3>
+<p className="mt-1 text-md text-gray-500">{f.desc}</p>
 </div>
 </div>
-<button className="mt-4 text-xs font-medium text-red-600 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-red-200">Learn more →</button>
+<button className="mt-4 text-lg font-medium text-red-600 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-red-200">Learn more →</button>
 </article>
 ))}
 </div>

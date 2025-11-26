@@ -12,12 +12,8 @@ className="relative overflow-hidden"
 aria-label="Hero section with headline and CTA"
 >
 <div className="absolute inset-0">
-<div className="h-full w-full bg-[linear-gradient(180deg,rgba(0,0,0,0.25),rgba(0,0,0,0.25))]" />
-<img
-src="https://images.unsplash.com/photo-1584438788510-0626c2a8a8b5?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=2b8f6c2b4a3f2d58e3e8d7b5b1a7a9d6"
-alt="Volunteers helping a donor"
-className="h-72 w-full object-cover md:h-[420px] lg:h-[540px] brightness-75"
-/>
+<div className="h-full w-full bg-gray-500" />
+
 </div>
 
 
@@ -29,8 +25,8 @@ className="h-72 w-full object-cover md:h-[420px] lg:h-[540px] brightness-75"
 
 <div className="mt-8 flex flex-col sm:flex-row gap-3 items-center justify-center">
 <a
-href="#banner"
-className="inline-flex items-center gap-3 rounded-full bg-red-600 px-5 py-3 text-sm font-semibold text-white shadow hover:scale-[1.02] transition-transform focus:outline-none focus-visible:ring-2 focus-visible:ring-red-300"
+href="/joinAsDonor"
+className="inline-flex items-center gap-3 rounded-full bg-red-600 px-5 py-3 text-lg font-semibold text-white shadow hover:scale-[1.02] transition-transform focus:outline-none focus-visible:ring-2 focus-visible:ring-red-300"
 >
 Become a Donor
 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
@@ -40,14 +36,14 @@ Become a Donor
 </a>
 <a
 href="#features"
-className="text-sm underline underline-offset-4 hover:text-white/90"
+className="text-lg underline underline-offset-4 hover:text-white/90"
 >
 Learn how it works
 </a>
 </div>
 
 
-<p className="mt-6 text-sm opacity-90">We follow WHO recommended safety protocols and maintain high standards for donor care.</p>
+<p className="mt-6 text-md opacity-90">We follow WHO recommended safety protocols and maintain high standards for donor care.</p>
 </div>
 </div>
 </section>
