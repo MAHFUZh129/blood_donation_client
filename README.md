@@ -1,4 +1,4 @@
-# BloodBridge – Save Lives with One Click ❤️
+# DonateBlood– Save Lives with One Click ❤️
 
 **Every 2 seconds someone needs blood.**  
 BloodBridge is a modern, fast, and user-friendly blood donation platform that connects donors with patients in urgent need — instantly.
